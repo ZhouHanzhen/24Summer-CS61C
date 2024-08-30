@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.c58792e" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.c58792e(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.f1d5ac0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.f1d5ac0(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -33,7 +33,11 @@
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="Register">
+      <a name="width" val="32"/>
+    </tool>
+  </lib>
   <lib desc="#Base" name="5">
     <tool name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
@@ -104,5 +108,33 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="3" loc="(290,120)" name="Multiplier"/>
+    <comp lib="3" loc="(550,130)" name="Adder"/>
+    <comp lib="4" loc="(350,90)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(640,100)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(170,110)" to="(250,110)"/>
+    <wire from="(170,130)" to="(170,150)"/>
+    <wire from="(170,130)" to="(250,130)"/>
+    <wire from="(170,210)" to="(290,210)"/>
+    <wire from="(170,90)" to="(170,110)"/>
+    <wire from="(290,120)" to="(350,120)"/>
+    <wire from="(290,160)" to="(290,210)"/>
+    <wire from="(290,160)" to="(350,160)"/>
+    <wire from="(290,210)" to="(290,260)"/>
+    <wire from="(290,260)" to="(600,260)"/>
+    <wire from="(410,120)" to="(510,120)"/>
+    <wire from="(460,140)" to="(460,310)"/>
+    <wire from="(460,140)" to="(510,140)"/>
+    <wire from="(460,310)" to="(760,310)"/>
+    <wire from="(550,130)" to="(640,130)"/>
+    <wire from="(600,170)" to="(600,260)"/>
+    <wire from="(600,170)" to="(640,170)"/>
+    <wire from="(700,130)" to="(760,130)"/>
+    <wire from="(760,130)" to="(760,310)"/>
+    <wire from="(760,130)" to="(810,130)"/>
   </circuit>
 </project>
